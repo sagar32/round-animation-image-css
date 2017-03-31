@@ -32,7 +32,7 @@ padding:0;
    border-style: dotted;
   border-radius: 75px;
   position: absolute;
-  left:45%; 
+  left:30%; 
 }
 .caleePicZoom{
   animation: userPic 1s infinite linear,
