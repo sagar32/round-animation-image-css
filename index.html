@@ -2,80 +2,16 @@
 
 <head>
     <title>propic when call user</title>
-    <style>
-body{
-margin:0;
-padding:0;
-}
-
-@keyframes caleePropic {
-	from {
-		transform: scale(1)
-	}
-	to {
-		transform: scale(2)
-	}
-}
-.borderChange{
-    border-color:  #00ff00 #0000ff rgb(250,0,255) #ff0000;
-}
-@keyframes borderChange{
-    10%{
-border-color:  #00ff00 #0000ff rgb(250,0,255) #ff0000;
-    }
-    50%{
-border-color:rgb(250,0,255) #ff0000 #00ff00 #0000ff ;
-    }
-    100%{
-border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
-    }
-    from {
-		transform: scale(2)
-	}
-	to {
-		transform: scale(1)
-	}
-}
-.caleePropic {
-  margin: 25% auto;
-  width: 150px;
-  height: 150px;
-  /*border: 1px solid blue;*/
-  border-width: 3px;
-   border-style: dotted;
-    /*animation:borderChange 1s infinite alternate;*/
-  border-radius: 75px;
-  position: absolute;
-  left:25%; 
-  /*animation: caleePropic 3s infinite linear;*/
-}
-.one {
-  animation: caleePropic 3s infinite linear,
-  borderChange 1s infinite alternate;
-}
-
-.two {
-  animation: caleePropic 2s infinite linear,
-  borderChange 2s infinite alternate;
-}
-.three {
-  animation: caleePropic 1s infinite linear,
-  borderChange 3s infinite alternate;
-}
-
-</style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-    <div >
-        <img class="caleePropic " id="calleeImg" src="website_pic.jpg"/     >
+    <div>
+        <img class="caleePropic caleePicZoom" id="calleeImg" src="website_pic.jpg" />
         <div class="caleePropic  one"></div>
         <div class="caleePropic  two"></div>
         <div class="caleePropic  three"></div>
-        
     </div>
-
 </body>
 
 </html>
