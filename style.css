@@ -2,6 +2,7 @@
 body{
 margin:0;
 padding:0;
+    overflow-y: hidden;
 }
 
 @keyframes caleePropic {
@@ -17,22 +18,25 @@ padding:0;
 	to {transform: scale(0.8)}
 }
 @keyframes borderChange{
-    10%{border-color: #FF1461 #18FF92 #5A87FF #FBF38C;}
-    50%{border-color:#FF1461  #FBF38C #18FF92 #5A87FF;}
-    100%{border-color: #FBF38C #18FF92 #5A87FF  #FF1461;}
+    25%{border-color: #FF1461 #18FF92 #5A87FF #FBF38C;}
+    50%{border-color: #18FF92 #5A87FF #FBF38C #FF1461;}
+    75%{border-color: #5A87FF #FBF38C #FF1461 #18FF92;}
+    100%{border-color:#FBF38C #FF1461 #18FF92 #5A87FF;}
     from {transform: scale(1.8)}
-	to {transform: scale(1)}
+    to {transform: scale(1)}
 }
 
 .caleePropic {
-  margin: 150px auto;
+  position: absolute;
+  left:50%;
+  top:50%;
   width: 150px;
   height: 150px;
+  margin-top:-75px;
+  margin-left:-75px;
   border-width: 3px;
-   border-style: dotted;
-  border-radius: 75px;
-  position: absolute;
-  left:30%; 
+  border-style: dotted;
+  border-radius: 75px; 
 }
 .caleePicZoom{
   animation: userPic 1s infinite linear,
