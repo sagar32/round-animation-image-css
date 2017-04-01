@@ -2,7 +2,7 @@
 body{
 margin:0;
 padding:0;
-    overflow-y: hidden;
+overflow-y: hidden;
 }
 
 @keyframes caleePropic {
@@ -55,4 +55,14 @@ padding:0;
 .three {
   animation: caleePropic 1.5s infinite linear,
   borderChange 1.5s infinite alternate;
+}
+.container{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  background: #f8f8f8;
+  width:100%;
+  height: 100%;
+  margin-top:-25%;
+  margin-left: -50%; 
 }
